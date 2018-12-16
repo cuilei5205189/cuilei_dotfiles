@@ -23,6 +23,8 @@ vim安装
 
 ## zsh
 
+iterm zsh theme自定义
+https://github.com/wesbos/Cobalt2-iterm
 
 ## mackup统一备份到dropbox
 
