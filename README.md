@@ -1,25 +1,27 @@
 # cuilei_dotfiles
 
 把`~/dotfiles`文件夹里的配置文件映射到用户目录。
-`ln -s ~/dotfiles/zshrc ~/.zshrc`
+`$ ln -s ~/dotfiles/zshrc ~/.zshrc`
 ![tldr ln](http://qiniublog.cuilei.top/tldr%20ln.png)
 ![ln -s](http://qiniublog.cuilei.top/ln%20-s%20file.png)
 
 ## vim
 vim安装
-- git clone `https://github.com/barretlee/autoconfig-mac-vimrc`
-- cd autoconfig-mac-vimrc
-- chmod +x install
-- ./install
+```bash
+$ git clone https://github.com/barretlee/autoconfig-mac-vimrc
+$ cd autoconfig-mac-vimrc
+$ chmod +x install
+$ ./install
+```
 
 安装之后出现的文件夹`~/.vim`，配置文件`~/.vimrc`。
 
 ## spacemacs
 安装emacs
-`brew cask install emacs`
+`$ brew cask install emacs`
 
 安装emacs配置文件 spacemacs
-`git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d`
+`$ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d`
 
 安装之后出现的文件夹`~/.emacs.d`，配置文件`~/.spacemacs`。
 
