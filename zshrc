@@ -97,7 +97,6 @@ source $ZSH/oh-my-zsh.sh
 export PATH="$PATH:$HOME/.rvm/bin"
 # $PATH测试 test文件夹加入$PATH
 export PATH=~/learn\ code\ files/cuilei_xiedaimala/blog/test:$PATH
-export PATH=~/desktop/test:$PATH
 
 # anaconda3 加入PATH
 export PATH="/usr/local/anaconda3/bin:$PATH"
