@@ -29,3 +29,7 @@ https://github.com/wesbos/Cobalt2-iterm
 ## mackup统一备份到dropbox
 
 https://github.com/lra/mackup
+
+## 终极策略
+mac Time Machine + NAS
+使用Time Machine，你既可以回到过去某个时刻，提取某个文件在当时的版本；也可以在电脑异常崩溃后直接全盘恢复到过去某个时刻的状态。
