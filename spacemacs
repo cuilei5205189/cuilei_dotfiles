@@ -295,6 +295,11 @@ values."
    ))
 
 (defun dotspacemacs/user-init ()
+    (org-babel-do-load-languages
+    'org-babel-load-languages
+    '((js . t)
+      (python . t)
+      (ruby . t)))
   "Initialization function for user code.
 It is called immediately after `dotspacemacs/init', before layer configuration
 executes.
