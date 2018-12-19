@@ -148,18 +148,6 @@ alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
 
 . ~/z.sh
 alias j='z'
-# j() {
-#   if [[ -z "$*" ]]; then
-#     cd "$(_z -l 2>&1 | fzf +s | sed 's/^[0-9,.]* *//')"
-#   else
-#     _last_z_args="$@"
-#     _z "$@"
-#   fi
-# }
-
-# jj() {
-#     cd "$(_z -l 2>&1 | sed 's/^[0-9,.]* *//' | fzf -q $_last_z_args)"
-# }
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
@@ -167,5 +155,3 @@ export NVM_DIR="$HOME/.nvm"
 
 # 打开bash时，自动转到desktop
 # cd ~/desktop
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
