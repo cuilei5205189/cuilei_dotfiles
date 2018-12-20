@@ -3,6 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/cuilei/.zsh
+export FZF_BASE=/path/to/fzf/install/dir
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -59,7 +60,7 @@ ZSH_THEME="cobalt2"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git zsh-autosuggestions
+  git zsh-autosuggestions dirhistory fzf zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
