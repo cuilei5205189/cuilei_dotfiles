@@ -153,6 +153,7 @@ alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
 . ~/z.sh
 alias j='z'
 alias f='fzf'
+source ~/.zsh-interactive-cd.plugin.zsh
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
