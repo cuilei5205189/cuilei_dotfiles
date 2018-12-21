@@ -60,7 +60,7 @@ ZSH_THEME="cobalt2"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git zsh-autosuggestions dirhistory fzf zsh-syntax-highlighting git-open
+  git zsh-autosuggestions dirhistory fzf zsh-syntax-highlighting git-open osx
 )
 
 source $ZSH/oh-my-zsh.sh
