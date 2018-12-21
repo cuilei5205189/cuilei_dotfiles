@@ -117,6 +117,9 @@ alias unproxy='unset all_proxy'
 alias emacs.='/Applications/Emacs.app/Contents/MacOS/Emacs -nw'
 
 
+# trash 代替 rm -rf 文件删除到垃圾桶
+alias rm='trash'
+
 #常用alias
 alias showusers='cut -d: -f1 /etc/passwd'
 alias showversion='lsb_release -a'
