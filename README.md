@@ -26,17 +26,41 @@ $ ./install
 安装之后出现的文件夹`~/.emacs.d`，配置文件`~/.spacemacs`。
 
 ## zsh
-### zsh插件
+
+### ~/.zsh文件夹修改
+```
+./custom/plugin
+custom/plugins
+├── example
+├── git-open
+├── zsh-autosuggestions
+└── zsh-syntax-highlighting
+custom/themes
+└──themes
+   └── cobalt2.zsh-theme
+cobalt2.zsh-theme
+```
+iterm zsh theme自定义
+https://github.com/wesbos/Cobalt2-iterm
+
+其他文件以官方库为准
+https://github.com/robbyrussell/oh-my-zsh
+
+本地更新命令
+`$ upgrade_oh_my_zsh`
+
+### zsh配置文件
+具体配置在cuilei_dotfiles
+`zshrc`
+
+#### zsh插件
 ```
 plugins=(
   git zsh-autosuggestions dirhistory fzf zsh-syntax-highlighting git-open osx
 )
 ```
-### iterm zsh theme自定义
-https://github.com/wesbos/Cobalt2-iterm
 
 ## mackup统一备份到dropbox
-
 https://github.com/lra/mackup
 
 ## 终极策略
