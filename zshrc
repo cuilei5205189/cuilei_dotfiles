@@ -151,9 +151,27 @@ alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
 # fzf方便快速搜索文件或目录
 
 . ~/z.sh
-alias j='z'
 alias f='fzf'
 source ~/.zsh-interactive-cd.plugin.zsh
+
+unalias z
+z() {
+  if [[ -z "$*" ]]; then
+    cd "$(_z -l 2>&1 | fzf +s --tac | sed 's/^[0-9,.]* *//')"
+  else
+    _last_z_args="$@"
+    _z "$@"
+  fi
+}
+
+zz() {
+  cd "$(_z -l 2>&1 | sed 's/^[0-9,.]* *//' | fzf -q "$_last_z_args")"
+}
+
+#Since z is not very optimal located on a qwerty keyboard I have these aliased as j and jj
+
+alias j=z
+alias jj=zz
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
