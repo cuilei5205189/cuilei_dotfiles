@@ -26,8 +26,13 @@ $ ./install
 安装之后出现的文件夹`~/.emacs.d`，配置文件`~/.spacemacs`。
 
 ## zsh
-
-iterm zsh theme自定义
+### zsh插件
+```
+plugins=(
+  git zsh-autosuggestions dirhistory fzf zsh-syntax-highlighting git-open osx
+)
+```
+### iterm zsh theme自定义
 https://github.com/wesbos/Cobalt2-iterm
 
 ## mackup统一备份到dropbox
