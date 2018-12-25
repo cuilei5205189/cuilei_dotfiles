@@ -46,7 +46,7 @@ https://github.com/wesbos/Cobalt2-iterm
 其他文件以官方库为准
 https://github.com/robbyrussell/oh-my-zsh
 
-本地更新命令
+ohmyzsh更新命令
 `$ upgrade_oh_my_zsh`
 
 ### zsh配置文件
