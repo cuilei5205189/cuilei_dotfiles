@@ -3,7 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/cuilei/.zsh
-export FZF_BASE=/path/to/fzf/install/dir
+#export FZF_BASE=/path/to/fzf/install/dir
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
