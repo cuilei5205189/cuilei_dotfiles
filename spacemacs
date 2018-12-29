@@ -303,6 +303,10 @@ values."
     '((js . t)
       (python . t)
       (ruby . t)))
+    (setq configuration-layer--elpa-archives
+          '(("melpa-cn" . "http://elpa.zilongshanren.com/melpa/")
+	          ("org-cn"   . "http://elpa.zilongshanren.com/org/")
+	          ("gnu-cn"   . "http://elpa.zilongshanren.com/gnu/")))
   "Initialization function for user code.
 It is called immediately after `dotspacemacs/init', before layer configuration
 executes.
