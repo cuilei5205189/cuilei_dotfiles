@@ -3,13 +3,15 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/cuilei/.zsh
+#export http_proxy='http://127.0.0.1:1087'
+#export https_proxy='http://127.0.0.1:1087'
 #export FZF_BASE=/path/to/fzf/install/dir
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="cobalt2"
-
+ZSH_THEME="powerlevel9k/powerlevel9k"
+source /Users/cuilei/.rvm/gems/ruby-2.5.1/gems/colorls-1.1.1/lib/tab_complete.sh
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
 # cause zsh load theme from this variable instead of
@@ -118,7 +120,7 @@ alias emacs.='/Applications/Emacs.app/Contents/MacOS/Emacs -nw'
 
 
 # trash 代替 rm -rf 文件删除到垃圾桶
-alias rm='trash'
+# alias rm='trash'
 
 #常用alias
 alias showusers='cut -d: -f1 /etc/passwd'
@@ -146,6 +148,8 @@ alias du="du -ach | sort -h"
 # psg command
 alias psg="ps aux | grep -v grep | grep -i -e VSZ -e" 
 
+#ruby colorls
+alias lc="colorls"
 
 # z方便实现快速目录跳转
 # fzf方便快速搜索文件或目录
@@ -179,3 +183,22 @@ export NVM_DIR="$HOME/.nvm"
 
 # 打开bash时，自动转到desktop
 # cd ~/desktop
+
+POWERLEVEL9K_MODE='nerdfont-complete'
+
+# Customise the Powerlevel9k prompts
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
+  custom_medium custom_freecodecamp dir vcs newline status
+)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
+POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+# Add the custom Medium M icon prompt segment
+#POWERLEVEL9K_CUSTOM_MEDIUM="echo -n $'\ue796'"
+#POWERLEVEL9K_CUSTOM_MEDIUM_FOREGROUND="black"
+#POWERLEVEL9K_CUSTOM_MEDIUM_BACKGROUND="white"
+# Add the custom freeCodeCamp prompt segment
+POWERLEVEL9K_CUSTOM_FREECODECAMP="echo -n $'\ue796' cuilei"
+POWERLEVEL9K_CUSTOM_FREECODECAMP_FOREGROUND="white"
+POWERLEVEL9K_CUSTOM_FREECODECAMP_BACKGROUND="red"
+# Load Nerd Fonts with Powerlevel9k theme for Zsh
+POWERLEVEL9K_MODE='nerdfont-complete'
