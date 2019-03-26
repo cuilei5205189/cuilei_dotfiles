@@ -61,7 +61,7 @@ https://github.com/athityakumar/colorls
 #### zsh插件
 ```
 plugins=(
-  git zsh-autosuggestions dirhistory fzf zsh-syntax-highlighting git-open osx
+  git zsh-autosuggestions dirhistory fzf zsh-syntax-highlighting git-open osx rails ruby
 )
 ```
 
