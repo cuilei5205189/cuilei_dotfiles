@@ -53,6 +53,11 @@ ohmyzsh更新命令
 具体配置在cuilei_dotfiles
 `zshrc`
 
+### zsh theme
+https://github.com/bhilburn/powerlevel9k
+https://nerdfonts.com/
+https://github.com/athityakumar/colorls
+
 #### zsh插件
 ```
 plugins=(

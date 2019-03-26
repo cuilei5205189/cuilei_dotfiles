@@ -184,21 +184,23 @@ export NVM_DIR="$HOME/.nvm"
 # 打开bash时，自动转到desktop
 # cd ~/desktop
 
-POWERLEVEL9K_MODE='nerdfont-complete'
+#POWERLEVEL9K_MODE='nerdfont-complete'
 
 # Customise the Powerlevel9k prompts
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
-  custom_medium custom_freecodecamp dir vcs newline status
+   custom_freecodecamp dir vcs newline status
 )
+
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
-# Add the custom Medium M icon prompt segment
-#POWERLEVEL9K_CUSTOM_MEDIUM="echo -n $'\ue796'"
-#POWERLEVEL9K_CUSTOM_MEDIUM_FOREGROUND="black"
-#POWERLEVEL9K_CUSTOM_MEDIUM_BACKGROUND="white"
+
 # Add the custom freeCodeCamp prompt segment
-POWERLEVEL9K_CUSTOM_FREECODECAMP="echo -n $'\ue796' cuilei"
+POWERLEVEL9K_CUSTOM_FREECODECAMP="echo -n $'\ue23e' cuilei"
 POWERLEVEL9K_CUSTOM_FREECODECAMP_FOREGROUND="white"
-POWERLEVEL9K_CUSTOM_FREECODECAMP_BACKGROUND="red"
-# Load Nerd Fonts with Powerlevel9k theme for Zsh
-POWERLEVEL9K_MODE='nerdfont-complete'
+POWERLEVEL9K_CUSTOM_FREECODECAMP_BACKGROUND="black"
+
+#POWERLEVEL9K_STATUS_OK="echo -n $'\uf0a4'"
+POWERLEVEL9K_STATUS_OK_BACKGROUND="red"
+POWERLEVEL9K_STATUS_OK_FOREGROUND="yellow"
+
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(background_jobs time vpn_ip nvm rvm)
