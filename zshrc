@@ -62,10 +62,9 @@ source /Users/cuilei/.rvm/gems/ruby-2.5.1/gems/colorls-1.1.1/lib/tab_complete.sh
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git zsh-autosuggestions dirhistory fzf zsh-syntax-highlighting git-open osx
+  git gitignore zsh-autosuggestions dirhistory fzf zsh-syntax-highlighting git-open osx rails ruby
 )
 
-source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -103,6 +102,9 @@ export PATH=~/learn\ code\ files/cuilei_xiedaimala/blog/test:$PATH
 
 # anaconda3 加入PATH
 export PATH="/usr/local/anaconda3/bin:$PATH"
+
+# sublime 加入PATH
+export PATH=/Applications/Sublime\ Text.app/Contents/SharedSupport/bin:$PATH
 
 # 用vscode在命令行打开文件
 export PATH=/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin:$PATH
@@ -149,7 +151,8 @@ alias du="du -ach | sort -h"
 alias psg="ps aux | grep -v grep | grep -i -e VSZ -e" 
 
 #ruby colorls
-alias lc="colorls"
+alias lc="ls"
+alias ls="colorls"
 
 # z方便实现快速目录跳转
 # fzf方便快速搜索文件或目录
@@ -184,23 +187,42 @@ export NVM_DIR="$HOME/.nvm"
 # 打开bash时，自动转到desktop
 # cd ~/desktop
 
-#POWERLEVEL9K_MODE='nerdfont-complete'
-
 # Customise the Powerlevel9k prompts
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
-   custom_freecodecamp dir vcs newline status
-)
 
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 
 # Add the custom freeCodeCamp prompt segment
-POWERLEVEL9K_CUSTOM_FREECODECAMP="echo -n $'\ue23e' cuilei"
+POWERLEVEL9K_CUSTOM_FREECODECAMP="echo -n $'\ue23e'"
 POWERLEVEL9K_CUSTOM_FREECODECAMP_FOREGROUND="white"
 POWERLEVEL9K_CUSTOM_FREECODECAMP_BACKGROUND="black"
 
-#POWERLEVEL9K_STATUS_OK="echo -n $'\uf0a4'"
-POWERLEVEL9K_STATUS_OK_BACKGROUND="red"
+POWERLEVEL9K_CUSTOM_ARROW="echo -n $'\uf45c'"
+POWERLEVEL9K_CUSTOM_ARROW_FOREGROUND="white"
+POWERLEVEL9K_CUSTOM_ARROW_BACKGROUND="black"
+
+POWERLEVEL9K_USER_ICON="\ue23e "
+
+POWERLEVEL9K_OK_ICON="\uf00c"
+POWERLEVEL9K_STATUS_OK_BACKGROUND="black"
 POWERLEVEL9K_STATUS_OK_FOREGROUND="yellow"
 
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(background_jobs time vpn_ip nvm rvm)
+
+POWERLEVEL9K_TIME_BACKGROUND="black"
+POWERLEVEL9K_TIME_FOREGROUND="yellow"
+
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(user dir vcs newline status)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(background_jobs time)
+
+POWERLEVEL9K_MODE='nerdfont-complete'
+
+source $ZSH/oh-my-zsh.sh
+
+. /usr/local/anaconda3/etc/profile.d/conda.sh
+export PATH="/usr/local/opt/gnu-getopt/bin:$PATH"
+export GOOGLE_APPLICATION_CREDENTIALS="/Users/cuilei/gcapi.json"
+
+#alias for cnpm
+alias cnpm="npm --registry=https://registry.npm.taobao.org \
+  --cache=$HOME/.npm/.cache/cnpm \
+  --disturl=https://npm.taobao.org/dist \
+  --userconfig=$HOME/.cnpmrc"
