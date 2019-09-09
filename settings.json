@@ -1,0 +1,167 @@
+{
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.idea": true,
+    "**/.svn": true,
+    "**/CVS": true
+  },
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.formatOnPaste": false,
+  "window.zoomLevel": -1,
+  "editor.snippetSuggestions": "top",
+  "editor.rulers": [
+    80,
+    120
+  ],
+  "editor.wordWrap": "off",
+  "editor.tabSize": 2,
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.syntaxProfiles": {
+    "vue-html": "html",
+    "vue": "html",
+  },
+  "emmet.includeLanguages": {
+    "html.erb": "html",
+    "erb": "html",
+    "vue-html": "html",
+    "vue": "html",
+    "javascript": "javascriptreact"
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": false,
+    "suppressShowKeyBindingsNotice": true
+  },
+  "[javascript]": {},
+  "liveServer.settings.donotVerifyTags": true,
+  "liveServer.settings.ignoreFiles": [
+    ".vscode/**",
+    "**/*.scss",
+    "**/*.sass",
+    "**/*.ts",
+    "**/*.json"
+  ],
+  "files.autoSave": "afterDelay",
+  "[vue]": {},
+  "eslint.autoFixOnSave": false,
+  // jsx自动修复有问题，取消js的format
+  "editor.formatOnSave": false,
+  // Enable/disable default JavaScript formatter (For Prettier)
+  "javascript.format.enable": false,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    {
+      "language": "html",
+      "autoFix": true
+    },
+    {
+      "language": "vue",
+      "autoFix": true
+    }
+  ],
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "vetur.format.defaultFormatter.html": "prettier",
+  "vetur.format.styleInitialIndent": true,
+  "vetur.format.scriptInitialIndent": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "html.format.wrapAttributes": "auto",
+  "ruby.format": "rubocop",
+  "ruby.rubocop.executePath": "/users/cuilei/.rvm/gems/ruby-2.5.1/bin/",
+  "ruby.rubocop.onSave": true,
+  "prettier.proseWrap": "never",
+  "prettier.disableLanguages": [
+    "vue"
+  ],
+  "html.format.enable": true,
+  "html.format.indentInnerHtml": true,
+  // "python.linting.pylintEnabled": false,
+  "python.linting.pylintPath": "/usr/local/bin/pylint",
+  "python.pythonPath": "/Users/cuilei/.pyenv/versions/3.7.0/bin/",
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
+  "editor.fontFamily": "Hack,Bold,Nerd,Font,Complete",
+  "editor.fontWeight": "bold",
+  "editor.fontSize": 14,
+  "terminal.integrated.cursorBlinking": true,
+  "workbench.colorTheme": "Abyss",
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.integrated.fontFamily": "Hack Nerd Font",
+  "terminal.integrated.fontSize": 14,
+  "files.associations": {
+    "*.html.erb": "erb",
+    "*.html.slim": "slim",
+    "zshrc": "shellscript"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2,
+    "editor.insertSpaces": false,
+  },
+  "vetur.format.options.useTabs": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[ruby]": {
+    "editor.defaultFormatter": "rebornix.ruby"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.locale": "en",
+  "breadcrumbs.enabled": true,
+  "editor.minimap.enabled": true,
+  "editor.renderWhitespace": "all",
+  "editor.renderControlCharacters": true,
+  "[html.erb]": {},
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[slim]": {},
+  "slimLint.executablePath": "/Users/cuilei/.rvm/gems/ruby-2.5.1/bin/slim-lint",
+  "pugbeautify.tabSize": 2,
+  "latex-preview.command": "xelatex",
+  "latex-workshop.latex.tools": [
+    {
+      // 编译工具和命令
+      "name": "xelatex",
+      "command": "xelatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-pdf",
+        "%DOCFILE%"
+      ]
+    },
+    {
+      "name": "pdflatex",
+      "command": "pdflatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOCFILE%"
+      ]
+    },
+    {
+      "name": "bibtex",
+      "command": "bibtex",
+      "args": [
+        "%DOCFILE%"
+      ]
+    }
+  ],
+}
