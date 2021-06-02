@@ -2,8 +2,6 @@
 
 把`~/dotfiles`文件夹里的配置文件映射到用户目录。
 `$ ln -s ~/dotfiles/zshrc ~/.zshrc`
-![tldr ln](http://qiniublog.cuilei.top/tldr-ln.png)
-![ln -s](http://qiniublog.cuilei.top/cuilei-zsh.jpg)
 
 ## vim
 vim安装
